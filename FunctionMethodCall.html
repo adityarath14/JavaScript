@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Method</title>
+    <script>
+        let travels_1={
+            travelsName:'Orange',
+            busid:101,
+            bookings:[]
+        };
+        let travels_2={
+            travelsName:'VRL',
+            busid:105,
+            bookings:[]
+        };
+        let travels_3={
+            travelsName:'Intercity',
+            busid:106,
+            bookings:[]
+        };
+        let book=function(name,seatNo){
+            console.log(`${name} is booked seat in ${this.travelsName} travels with seat Number ${seatNo}`);
+            let Passanger={person:`${name},${this.travelsName},${this.busid},${seatNo}`};
+            this.bookings.push(Passanger);
+        };
+        book.call(travels_1,'Aditya',23);
+        book.call(travels_2,'Rintu',3);
+        book.call(travels_3,'Netra',4);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

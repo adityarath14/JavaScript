@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddAll Digits</title>
+    <script>
+        num=Number(prompt("Enter A Number"))
+        function digit(num){
+            if(num===0){
+                return 0
+            }
+            return (num%10)+digit(Math.trunc(num/10))
+        }
+        console.log(digit(num))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

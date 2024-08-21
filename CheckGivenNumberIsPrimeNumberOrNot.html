@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        function main(){
+            let num=Number(prompt("Enter a Number:"));
+            count=0;
+            for(let i=1;i<=num;i++){
+                if(num%i==0){
+                    count++;
+                }
+            }
+            if (count==2){
+                console.log('Prime Number');
+            }
+            else{
+                console.log('Not Prime Number');
+            }
+        }
+        main();
+    </script>
+</head>
+<body>
+    <h1>Prime Number</h1>
+</body>
+</html>

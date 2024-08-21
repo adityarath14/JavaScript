@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Keyword</title>
+    <script>
+        let student={
+            id:101,
+            name:'Adi',
+            birthyear:2000,
+            calc:function(){
+                console.log(this);
+                let currentyear=new Date().getFullYear();
+                let age=currentyear-this.birthyear;
+                console.log(age);
+            }
+        };
+        student.calc();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

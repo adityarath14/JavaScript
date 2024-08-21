@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        main();
+        function main(){
+            let num_1=Number(prompt("Enter first number"));
+            let num_2=Number(prompt("enter Second Number"));
+            let output=calc(num_1,num_2,sum);
+            console.log(output)
+        }
+        function calc(a,b,calcType){
+            let res=0;
+            res=calcType(a,b);
+            return res;
+        }
+        function sum(n1,n2){
+            return n1+n2;
+        }
+        function mul(n1,n2){
+            return n1*n2;
+        }
+    </script>
+</head>
+<body>
+    <h1>CallBackFunction</h1>
+</body>
+</html>

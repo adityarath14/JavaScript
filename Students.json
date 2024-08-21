@@ -1,0 +1,4 @@
+{"studentsArray":[{"id":101,"name":"Amit Pandey","email":"amit@gmail.com","gender":"Male","marks":[37,56,89,54,62],"role":"student","pw":1234},
+{"id":102,"name":"Ravi Teja","email":"ravi@gmail.com","gender":"Male","marks":[73,65,27,42,92],"role":"student","pw":2345},
+{"id":103,"name":"sai kumar","email":"sai@gmail.com","gender":"Male","marks":[54,79,97,83,67],"role":"admin","pw":3456}
+]}

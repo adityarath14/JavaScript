@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM MANUPULATION</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        
+        div{
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        button{
+            background-color: white;
+            border: none;
+            outline: none;
+            padding: 5px 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        div>h1{
+            color: orange;
+        }
+        div>button:hover{
+            cursor: pointer;
+            box-shadow: 0 0 10px white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="display-text">Message</h1>
+        <button onclick="displayMsg();">Click Here</button>
+    </div>
+    <script>
+        function displayMsg(){
+            let displayTag=document.getElementById('display-text');
+            displayTag.textContent='Welcome to DOM Manupulation';
+            displayTag.style.color='White';
+        }
+    </script>
+</body>
+</html>

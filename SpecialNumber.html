@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Number</title>
+    <script>
+        let num=Number(prompt('Enter a Number'));
+        function fact(num,mul=1){
+            for(let fa=1;fa<num+1;fa++){
+                mul=mul*fa
+            }
+            return mul
+        }
+        function Special(num,d_sum=0){
+            while(num!=0){
+                rem=num%10
+                d_sum=d_sum+fact(rem)
+                num= Math.trunc(num/10)
+            }
+            return d_sum;
+        }
+        if(num==Special(num)){
+            console.log("Special Number")
+        }
+        else{
+            console.log("Not Special Number")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

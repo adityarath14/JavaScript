@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshad Number</title>
+    <script>
+        num=Number(prompt('Enter a number'))
+        function d_sum(num) {
+            if(num===0){
+                return 0
+            }
+            return (num%10)+d_sum(Math.trunc(num/10))
+        }
+        if(num%d_sum(num)===0){
+            console.log('Harshad Number')
+        }
+        else{
+            console.log('Not Harshad Number')
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

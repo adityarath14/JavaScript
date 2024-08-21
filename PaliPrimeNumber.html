@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaliPrime Number</title>
+    <script>
+        num=Number(prompt('Enter a Number:'))
+        function prime(num,fa_count=0){
+            for(let fa=1;fa<num+1;fa++){
+                if(num%fa===0){
+                    fa_count=fa_count+1
+                }
+            }
+            if(fa_count===2){
+                return true
+            }
+            else{
+                return false
+            }
+        }
+        function Pali(num,dup,d_sum=0){
+            while(num!=0){
+                rem=num%10
+                d_sum=d_sum*10+rem
+                num=Math.trunc(num/10)
+            }
+            return dup===d_sum
+        }
+        if(prime(num) && Pali(num,num)){
+            console.log('PaliPrime Number');
+        }
+        else{
+            console.log('Not Pali Prime');
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

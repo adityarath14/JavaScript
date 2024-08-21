@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Number</title>
+    <script>
+        num=Number(prompt('Enter The number:'))
+        function Armstrong(num,n_digit){
+            if(num===0){
+                return 0
+            }
+            return (num%10)**n_digit+Armstrong(Math.trunc(num/10),n_digit)
+        }
+        if(num===Armstrong(num,String(num).length)){
+            console.log('Arm strong Number')
+        }
+        else{
+            console.log('Not Armstrong Number')
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

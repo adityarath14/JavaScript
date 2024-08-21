@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Property DOM  Tree</title>
+</head>
+<body>
+    <div>
+        <h1>Header one</h1>
+        <p>Shop in Amazon
+            <a href="#">Clik Here</a>
+        </p>
+    </div>
+    <script>
+        let domTree=document;
+        console.log(domTree);
+        let htmlFile=document.documentElement;
+        console.log(htmlFile);
+        let headTag=document.head;
+        console.log(headTag);
+        let bodyTag=document.body;
+        console.log(bodyTag);
+    </script>
+</body>
+</html>

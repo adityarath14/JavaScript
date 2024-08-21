@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palaindrom Number</title>
+    <script>
+        num=Number(prompt('Enter a number:'));
+        d_sum=0;
+        dup=num;
+        while(num!=0){
+            rem=num%10
+            d_sum=d_sum*10+rem;
+            num=Math.trunc(num/10)
+        }
+        if(dup===d_sum){
+            console.log('Palaindrom Number');
+        }
+        else{
+            console.log('Not Palaindrom Number');
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

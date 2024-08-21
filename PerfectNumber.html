@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        function main(){
+            let num=Number(prompt("Enter a Number"));
+            let sum=0;
+            for(let i=1;i<=Math.trunc(num/2);i++){
+                if(num%i==0){
+                    sum+=i;
+                }
+            }
+            if(sum==num){
+                console.log('Perfect Number');
+            }
+            else{
+                console.log('Not Perfect Number');
+            }
+        }
+        main();
+    </script>
+</head>
+<body>
+    <h1>Perfect Number</h1>
+</body>
+</html>

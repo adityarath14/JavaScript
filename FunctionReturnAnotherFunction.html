@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        function outer(){
+            let a=10;
+            return function inner(){
+                //inner();
+                //return 1;
+                return inner();
+            }
+            let n1=outer;
+            console.log;
+            n1()
+        }
+    </script>
+</head>
+<body>
+    <h1>Heigher Order Function</h1>
+</body>
+</html>

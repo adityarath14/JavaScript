@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+    <script>
+        function outer(){
+            var a=10;
+            function inner(){
+                varb=20;
+                console.log(a);
+            }
+            return inner;
+        }
+        let function=outer();
+        function();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        main();
+        function main(){
+            let y=2004;
+            let m=2;
+            switch(m)
+            {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    console.log(`${y}==>${m}==>31 Days`);
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    console.log(`${y}==>${m}==>30 Days`);
+                    break;
+                case 2:
+                    if ((y%400==0)||(y%4==0 && y%100!=0)){
+                        console.log(`${y}==>${m}==>29 Days`);
+                    }
+                    else{
+                        console.log(`${y}==>${m}==>28 Days`);
+                    }
+                    break;
+                default:
+                    console.log('Invalid Month');               
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>    Number Of Days According to number of Years and days</h1>
+</body>
+</html>

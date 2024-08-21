@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        "use strict";
+        function main(){
+            let d1=new Date();
+            let day=d1.getDay();
+            let today="Today is";
+            switch(day)
+            {
+                case 0:
+                    today=today+"Sunday";
+                    break;
+                case 1:
+                    today+='Monday';
+                    break;
+                case 2:
+                    today+='Tuesday';
+                    break;
+                case 3:
+                    today+='Wednesday'
+                    break;
+                case 4:
+                    today+='Thursday';
+                    break;
+                case 5:
+                    today+='Friday';
+                    break;
+                case 4:
+                    today+='Saterday';
+                    break;
+                default:
+                    today+='Invalidday';
+            }
+            console.log(today);
+        }
+        main();
+    </script>
+</head>
+<body>
+    <h1>Today Day</h1>
+</body>
+</html>

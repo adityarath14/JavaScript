@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disarm Number</title>
+    <script>
+        num=Number(prompt('Enter a Number:'));
+        d_sum=0;
+        dup=num;
+        c_digit=String(num).length;
+        while(num!=0){
+            rem=num%10
+            d_sum=d_sum+rem**c_digit;
+            c_digit=c_digit-1
+            num=Math.trunc(num/10);
+        }
+        if(dup===d_sum){
+            console.log('Disarm Number');
+        }
+        else{
+            console.log('Not Disarm Number');
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

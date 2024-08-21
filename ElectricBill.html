@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        "use strict";
+        function electricbill(){
+            let unit=Number(prompt('Enter your unit:'));
+            if (unit>=0 && unit<=200){
+                console.log('Paid Amount is 0-RS');
+            }
+            else if (unit>=201 && unit<=250){
+                let Amount=unit*3;
+                console.log(`Paid Amount is ${Amount}-RS`);
+            }
+            else if (unit>=251 && unit<=300){
+                let Amount=unit*5;
+                console.log(`Paid Amount is ${Amount}-RS`);
+            }
+            else if(unit>300){
+                let Amount=unit*7;
+                console.log(`Paid Amount is ${Amount}-RS`);
+            }
+        }
+        electricbill();
+    </script>
+</head>
+<body>
+    <h1>Electric Bill</h1>
+</body>
+</html>
