@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather App</title>
+    <script src="http://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./Index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <main class="main flex items-center justify-center">
+        <section class="w-[500px] shadow-md shadow-black bg-green-500 flex justify-start items-center py-4 flex-col">
+            <div>
+                <input type="text" placeholder="Write the city.." id="city" class="bg-slate-600 text-white text-2xl font-bold border-none
+                rounded-md focus:outline-2 focus:outline-blue-400">
+                <button id="search" class="border-1 bg-red-700 text-white text-2xl font-bold rounded-md px-2 
+                hover:bg-slate-100 hover:text-red-600"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div id="display" class="hidden h-[200px] w-[100%] items-center text-white text-3xl flex flex-col justify-around">
+                <h1 id="city-name">CITY NAME</h1>
+                <div class="w-[100%] flex justify-around">
+                    <h1>Temp: <span id="temp"></span></h1>
+                    <h1>Wind Speed: <span id="wind"></span></h1>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="Index.js"></script>
+    <script src="http://cdn.tailwindcss.com"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.main{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right,rgba(100,100,100,0.7),rgba(100,100,100,0.7)),url("./bgimage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
